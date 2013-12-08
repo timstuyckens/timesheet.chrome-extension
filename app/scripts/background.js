@@ -58,6 +58,7 @@ var postGeoLocation=function(){
 
 
 var alarmKey="servicePostAlarm";
+//locally you can set this lower than 1 (eg: for debugging, set 0.1)
 var alarmInfo={periodInMinutes :0.1 };
 var alarmCallbacks={};
 alarmCallbacks[alarmKey]=function(){
