@@ -1,8 +1,8 @@
 {
-    "name": "__MSG_appName__",
-    "version": "0.0.2",
+    "name": "Timesheet.bITe",
+    "version": "0.0.3",
     "manifest_version": 2,
-    "description": "__MSG_appDescription__",
+    "description": "Will post data to the service",
     "icons": {
         "16": "images/icon-16.png",
         "128": "images/icon-128.png"
@@ -13,15 +13,17 @@
             "scripts/background.js",
             "scripts/lib/jquery-2.0.3.min.js"
         ],
-        //http://developer.chrome.com/extensions/event_pages.html
         "persistent": false
     },
     "permissions": [
-        //http://developer.chrome.com/extensions/xhr.html
         "http://timesheetservice.herokuapp.com/",
-        "http://localhost:3000/entry",
-        //chrome timer implementation
+        "http://localhost:3000/",
+        "identity",
         "alarms",
         "geolocation"
-    ]
+    ],
+    "oauth2": {
+        "client_id": "149255324323-hgjmq59gnt94jpp7sqc083qetqc55qbd.apps.googleusercontent.com",
+        "scopes": ["https://www.googleapis.com/auth/userinfo.profile"]
+    }
 }
