@@ -10,7 +10,18 @@
     "default_locale": "en",
     "background": {
         "scripts": [
-            "scripts/background.js"
-        ]
-    }
+            "scripts/background.js",
+            "scripts/lib/jquery-2.0.3.min.js"
+        ],
+        //http://developer.chrome.com/extensions/event_pages.html
+        "persistent": false
+    },
+    "permissions": [
+        //http://developer.chrome.com/extensions/xhr.html
+        "http://timesheetservice.herokuapp.com/",
+        "http://localhost:3000/entry",
+        //chrome timer implementation
+        "alarms",
+        "geolocation"
+    ]
 }
