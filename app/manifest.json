@@ -3,6 +3,7 @@
     "version": "0.0.3",
     "manifest_version": 2,
     "description": "Will post data to the service",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgMd2WHnSQ8HOL5j7Xmw1e+A8DMYL+hyOnM2TiXk/wJKoHo2CNxzAG5WEo74S0A3Iuxgr+M6mel1WW3gKi2Fmdm0KtQKAtYgI/yUX0fe8UqRg1Olz7e3OnJru6FS1U23G2C+wMaXRFZQ5uBsLCblgUELWyiGr+JPihXJqUZfwXn4vplBMpTY94Y1Wpr0VHuhOLtegbTRrbC+/13G1BJ45aputp+lH+/dgv2Yv2ZCveM1KTyTElowSqKLzBFKylkxcpsXgFssL7UIPP4oNI7jAeLna23resh5uR6FsKYi534/ACUCrspcvSq4PQXpKJ0CNRFQ0Z3jHQb/aQQjOrQBxXQIDAQAB",
     "icons": {
         "16": "images/icon-16.png",
         "128": "images/icon-128.png"
@@ -24,6 +25,8 @@
     ],
     "oauth2": {
         "client_id": "149255324323-hgjmq59gnt94jpp7sqc083qetqc55qbd.apps.googleusercontent.com",
-        "scopes": ["https://www.googleapis.com/auth/userinfo.profile"]
+        "scopes": ["https://www.googleapis.com/auth/drive"]
+        //"client_id": "149255324323.apps.googleusercontent.com",
+        //"scopes": ["https://www.googleapis.com/auth/userinfo.profile","https://www.googleapis.com/auth/drive"]
     }
 }

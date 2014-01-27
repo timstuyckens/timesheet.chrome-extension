@@ -14,7 +14,8 @@ var tryGetCurrentUser=function(){
 	var dfd=new $.Deferred();
 	chrome.identity.getAuthToken({ 'interactive': true }, function(token) {
 		if(token){
-			console.log(token);
+			console.log("token", token);
+			dfd.resolve(token);
 		}	
 	 	dfd.resolve("");
 	});
